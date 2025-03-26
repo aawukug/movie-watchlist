@@ -1,0 +1,172 @@
+
+/* TYPOGRAPHY */
+.search-movies {
+    font-size: 0.5rem;
+    margin-top:  0.5em;
+    margin-right: 3px;
+}
+
+.my-watchlist {
+    font-size: 1.3125rem;
+    margin-right: 38px;
+}
+
+.icon-container p {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.remove {
+    font-size: 0.4rem;
+    font-weight: 400;
+}
+
+.empty-watchlist-text {
+    font-size: 0.875rem;
+    color: #787878;
+    font-weight: 700;
+    margin-top: 180px;
+}
+
+.add-movies-text {
+    font-size: 0.75rem;
+}
+
+/* LAYOUT */
+
+.watchlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.add-icon-container {
+    display: flex;
+    gap: 0.5em;
+    padding: 5px 0;
+}
+
+.movie-container {
+    border-bottom: 1.5px solid #E5E7EB;
+}
+
+.remove-btn-container {
+    display: flex;
+    gap: 0.3em;
+    cursor: pointer;
+}
+
+
+/* ICONS */
+
+.fa-circle-plus{
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.remove-watchlist-btn {
+    font-size: 0.5rem;
+}
+
+
+
+/* PSEUDO CLASSES */
+.fa-circle-plus:hover {
+    color: #787878;
+}
+
+
+.remove-watchlist-btn:hover { 
+    color: red;
+}
+
+
+/* MEDIA QUERIES */
+
+/* FOR SCREENS LIKE IPHONE SE */
+
+@media (min-width: 375px) {
+    .my-watchlist {
+        margin-right: 60px;
+    }
+
+}
+
+@media (min-width: 360px) {
+    .my-watchlist {
+        margin-right: 50px;
+    }
+}
+
+@media (min-width: 390px ) {
+    .my-watchlist {
+        margin-right: 70px;
+    }
+}
+
+@media (min-width: 412px ) {
+    .find-movie{
+        margin-right: 80px;
+    }
+
+}
+
+
+/* FOR SCREENS LIKE IPHONE XR */
+@media (min-width: 414px ) {
+    .my-watchlist {
+        margin-right: 85px;
+    }
+      
+}
+
+
+@media (min-width: 430px ) {
+    .my-watchlist {
+        margin-right: 95px;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .remove-watchlist-btn{
+        font-size: 0.5625rem;
+    }
+
+    .remove {
+        font-size: 0.75rem;
+    }
+
+    .search-movies {
+        margin-right: 5px;
+    }
+
+    .my-watchlist {
+        font-size: 2.1875rem;
+        margin-right: 78px;
+
+
+    }
+
+    .search-movies {
+        font-size: 0.7rem;
+        margin-top:  0.5em;
+    }
+
+    .empty-watchlist-text {
+        font-size: 1.125rem;
+    }
+
+    .add-movies-text{
+        font-size: 0.9375rem;
+    }
+
+    .fa-circle-plus {
+        font-size: 1rem; 
+    } 
+
+    .remove-watchlist-btn {
+        font-size: 1rem;
+    }
+}
