@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // CHECK FOR BOTH DEFAULT HOME PAGE AND CURRENT PAGE
     if(currentPage === '/' || currentPage.includes('/index.html')){
-
     // RUN THESE CODE IF USER IS ONLY ON MAIN PAGE OR THE INDEX.HTML PAGE
     searchBtn.addEventListener('click', handleSearch)
     inputSearch.addEventListener('input', handleDisabledBtn)
@@ -137,8 +136,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 //  //   // THESE CODE RUNS WHEN USER IS ONLY ON WATCHLIST.HTML PAGE
-    } else if (currentPage.includes('/watchlist.html')) {
-        
+    } else if ( currentPage.includes('/watchlist') || currentPage.includes('/watchlist.html')) {
         const watchlistContainer = document.getElementById('watchlist-container')
 
         // FUNCTION TO RENDER WATCHLIST MOVIES
