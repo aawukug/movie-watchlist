@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const currentPage = window.location.pathname
     // CHECK THE CURRENT PAGE USER IS ON
 
-    if(currentPage.includes('/index.html')){
+    // CHECK FOR BOTH DEFAULT HOME PAGE AND CURRENT PAGE
+    if(currentPage === '/' || currentPage.includes('/index.html')){
 
     // RUN THESE CODE IF USER IS ONLY ON MAIN PAGE OR THE INDEX.HTML PAGE
     searchBtn.addEventListener('click', handleSearch)
@@ -104,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 if(alreadyExistedMovie) {
                    alert('Movie has already been added')
                 } else {
-                    // PUSH SELECTED MOVIE OBJECT TO WATCHLIST IN LOCAL STORAGE ARRAY
+                    // PUSH SELECTED MOVIE OBJECT TO WATCHLIST IN WATCHLIST MOVIES IN LOCAL STORAGE ARRAY
                     watchlistMoviesInLocalStorage.unshift(selectedMovie)
                     // UPDATE LOCAL STORAGE
                     setItemsInLocalStorage()

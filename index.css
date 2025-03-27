@@ -235,6 +235,9 @@ a:visited {
 }
 
 /* ICONS */
+.fa {
+    color: #FFFFFF;
+}
 
 .fa-bag-shopping {
     margin-right: 3px;
