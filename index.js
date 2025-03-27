@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
     function handleSearch(){
         let inputSearchValue = inputSearch.value
             // FETCH DATA FROM OPEN MOVIE API
-            fetch(`http://www.omdbapi.com/?t=${inputSearchValue}&apikey=6aa5e9fe`)
+            fetch(`https://www.omdbapi.com/?t=${inputSearchValue}&apikey=6aa5e9fe`)
             .then(response => response.json())
             .then(data => {
                 // CHECK IF MOVIE IS ON OPEN OMAPI
